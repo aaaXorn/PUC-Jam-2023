@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Character
+namespace nMovement
 {
     [CreateAssetMenu(fileName = "SO_MoveInfo", menuName = "ScriptableObjects/Character/Movement Info")]
     public class SO_MoveInfo : ScriptableObject
