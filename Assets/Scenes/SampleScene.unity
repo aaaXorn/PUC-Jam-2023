@@ -429,6 +429,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5667b763cf836c643aa747347b7accab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  list_unusedEvents: []
 --- !u!114 &996476881
 MonoBehaviour:
   m_ObjectHideFlags: 0
