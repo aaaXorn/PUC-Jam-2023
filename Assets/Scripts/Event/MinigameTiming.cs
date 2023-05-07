@@ -9,6 +9,7 @@ namespace nEvent
     {
         [SerializeField]
         private RectTransform rTransf_bolinha;
+        
         [SerializeField]
         private float bolinha_spd = 450f;
         [SerializeField]
