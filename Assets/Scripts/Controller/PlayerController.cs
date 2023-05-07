@@ -3,23 +3,31 @@ using System.Collections.Generic;
 using UnityEngine;
 using nMovement;
 using nInput;
+using nEvent;
 
 namespace nController
 {
     public class PlayerController : MonoBehaviour
     {
+        public static PlayerController s_singleton;
+
         [Tooltip("Movement functions.")] [SerializeField]
-        protected Movement move;
+        private Movement move;
 
         //if the character can move
-        protected bool canMove = true;
+        public bool canMove = true;
 
-        protected void Awake()
+        public bool inMinigameArea;
+        public EventTrigger eventT;
+
+        private void Awake()
         {
             if(move == null) move = GetComponent<Movement>();
+
+            s_singleton = this;
         }
 
-        protected void Update()
+        private void Update()
         {
             //gets the input
             Vector3 _input = Vector3.zero;
@@ -29,6 +37,18 @@ namespace nController
                 _input = new Vector3(InputSP.s_singleton.input_move.x, 0, InputSP.s_singleton.input_move.y).normalized;
 
                 move.Rotate(_input);
+
+                if(InputSP.s_singleton.input_interactDown && eventT != null)
+                {
+                    eventT.EnableMinigame();
+                }
+            }
+            else
+            {
+                if(Input.GetKeyDown(KeyCode.Escape) && eventT.obj_minigame.activeSelf)
+                {
+                    eventT.ExitMinigame();
+                }
             }
 
             //movement and gravity

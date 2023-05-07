@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     //eventos que já foram usados
     private List<GameObject> list_usedEvents = new List<GameObject>();
 
-    private GameObject currEvent;
+    public GameObject currEvent;
 
     #region timer
     private bool stopTimer = false;
@@ -67,7 +67,8 @@ public class GameManager : MonoBehaviour
 
         int nextEvent = Random.Range(0, list_unusedEvents.Count);
 
-        currEvent = Instantiate(list_unusedEvents[nextEvent], Vector3.zero, Quaternion.identity);
+        currEvent = list_unusedEvents[nextEvent];//Instantiate(list_unusedEvents[nextEvent], Vector3.zero, Quaternion.identity);
+        currEvent.SetActive(true);
         list_unusedEvents.RemoveAt(nextEvent);
     }
 
