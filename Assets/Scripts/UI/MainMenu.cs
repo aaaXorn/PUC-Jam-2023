@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
+using UnityEngine.UI;
 
 namespace nUI
 {
@@ -14,6 +16,25 @@ namespace nUI
         private GameObject option_menu;
         [Tooltip("How to play menu.")] [SerializeField]
         private GameObject h2p_menu;
+
+        [SerializeField]
+        private AudioMixer audioM;
+        [SerializeField]
+        private Slider audioSlider;
+
+        private void Start()
+        {
+            if(PlayerPrefs.HasKey("Volume"))
+            {
+                float _value = PlayerPrefs.GetFloat("Volume");
+                audioSlider.value = _value;
+                Volume(_value);
+            }
+            else
+            {
+                Volume(0.5f);
+            }
+        }
 
         public void PlayGame()
         {
@@ -35,9 +56,13 @@ namespace nUI
             Application.Quit();
         }
 
-        public void Volume()
+        public void Volume(float _value)
         {
-            
+            float _volumeValue = Mathf.Log10(_value) * 20f;
+            audioM.SetFloat("MasterVolume", _volumeValue);
+
+            PlayerPrefs.SetFloat("Volume", _value);
+            PlayerPrefs.Save();
         }
     }
 }
