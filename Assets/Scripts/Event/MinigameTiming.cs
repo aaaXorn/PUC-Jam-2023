@@ -19,6 +19,12 @@ namespace nEvent
 
         private bool bolinha_goUp = true;
 
+        private int points = 0;
+        [SerializeField]
+        private int points_needed = 5;
+        [SerializeField]
+        private int points_perHit = 1, points_perMiss = 2;
+
         private void Update()
         {
             if(bolinha_goUp)
@@ -62,11 +68,23 @@ namespace nEvent
 
         private void TimingHit()
         {
+            points += points_perHit;
+
+            if(points >= points_needed)
+            {
+                points = points_needed;
+                GameManager.s_singleton.WinEvent();
+            }
+
             print("hit");
         }
 
         private void TimingMiss()
         {
+            points -= points_perMiss;
+
+            if(points < 0) points = 0;
+
             print("miss");
         }
     }

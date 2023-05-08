@@ -589,8 +589,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -200}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 0, y: -250}
+  m_SizeDelta: {x: 100, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &786527000
 MonoBehaviour:
@@ -649,7 +649,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &888906412
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -799,6 +799,9 @@ MonoBehaviour:
   bolinha_border_bottom: -233
   bolinha_target_top: 34
   bolinha_target_bottom: -34
+  points_needed: 5
+  points_perHit: 1
+  points_perMiss: 2
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -928,8 +931,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5667b763cf836c643aa747347b7accab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  list_unusedEvents: []
+  list_unusedEvents:
+  - {fileID: 1453147717}
+  - {fileID: 888906411}
+  currMinigame: {fileID: 0}
   currEvent: {fileID: 0}
+  eventCD: 1
+  gameOverTimer: 15
 --- !u!114 &996476881
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1193,7 +1201,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1453147718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1610,7 +1618,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rTransf_barra: {fileID: 786526999}
-  barra_increasePerTap: 15
+  barra_increasePerTap: 25
   barra_targetHeight: 500
 --- !u!1 &2099404076
 GameObject:

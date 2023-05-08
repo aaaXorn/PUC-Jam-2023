@@ -29,7 +29,7 @@ namespace nEvent
             obj_minigame.SetActive(true);
             PlayerController.s_singleton.canMove = false;
 
-            GameManager.s_singleton.currEvent = obj_minigame;
+            GameManager.s_singleton.currMinigame = obj_minigame;
         }
 
         public void ExitMinigame()

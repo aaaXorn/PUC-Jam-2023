@@ -26,6 +26,8 @@ namespace nEvent
                 {
                     rTransf_barra.anchoredPosition = new Vector2(rTransf_barra.anchoredPosition.x, 0f);
                     rTransf_barra.sizeDelta = new Vector2(rTransf_barra.sizeDelta.x, barra_targetHeight);
+
+                    GameManager.s_singleton.WinEvent();
                 }
             }
         }

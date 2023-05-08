@@ -45,7 +45,12 @@ namespace nController
             }
             else
             {
-                if(Input.GetKeyDown(KeyCode.Escape) && eventT.obj_minigame.activeSelf)
+                if(eventT == null)
+                {
+                    print("???");
+                    canMove = true;
+                }
+                else if(Input.GetKeyDown(KeyCode.Escape) && eventT.obj_minigame.activeSelf)
                 {
                     eventT.ExitMinigame();
                 }

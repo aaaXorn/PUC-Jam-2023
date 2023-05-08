@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     //eventos que já foram usados
     private List<GameObject> list_usedEvents = new List<GameObject>();
 
+    public GameObject currMinigame;
     public GameObject currEvent;
 
     #region timer
@@ -19,9 +20,11 @@ public class GameManager : MonoBehaviour
 
     private bool isInEvent = false;
     private float eventTime = 0f;
+    [SerializeField]
     private float eventCD = 15f;
 
     private float gameOverTime = 0f;
+    [SerializeField]
     private float gameOverTimer = 15f;
 
     private void Awake()
@@ -77,18 +80,20 @@ public class GameManager : MonoBehaviour
         stopTimer = true;
     }
 
-    private void WinEvent()
+    public void WinEvent()
     {
+        currMinigame.SetActive(false);
         Destroy(currEvent);
 
         isInEvent = false;
         eventTime = 0f;
 
-        stopTimer = true;
-
         if(list_unusedEvents.Count <= 0)
         {
+            stopTimer = true;
+
             //win game
+            print("win");
         }
     }
     #endregion
