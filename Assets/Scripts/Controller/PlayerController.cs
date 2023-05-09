@@ -47,7 +47,6 @@ namespace nController
             {
                 if(eventT == null)
                 {
-                    print("???");
                     canMove = true;
                 }
                 else if(Input.GetKeyDown(KeyCode.Escape) && eventT.obj_minigame.activeSelf)
