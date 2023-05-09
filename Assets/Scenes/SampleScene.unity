@@ -610,6 +610,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab_stone: {fileID: 7158747461240138380, guid: f4cbf3ff7c43a04468e1f9ee6a8d29e4, type: 3}
   rTransf_stoneSpawn: {fileID: 1764660424}
+  obj_totem: {fileID: 1279425652}
 --- !u!1 &786526998
 GameObject:
   m_ObjectHideFlags: 0
@@ -1106,6 +1107,7 @@ MonoBehaviour:
   currEvent: {fileID: 0}
   eventCD: 1
   gameOverTimer: 15
+  force_event: 2
 --- !u!114 &996476881
 MonoBehaviour:
   m_ObjectHideFlags: 0

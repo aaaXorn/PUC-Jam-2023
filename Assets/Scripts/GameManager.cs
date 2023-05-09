@@ -27,6 +27,9 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private float gameOverTimer = 15f;
 
+    [SerializeField]
+    private int force_event = -1;
+
     private void Awake()
     {
         s_singleton = this;
@@ -68,7 +71,9 @@ public class GameManager : MonoBehaviour
         isInEvent = true;
         gameOverTime = 0f;
 
-        int nextEvent = Random.Range(0, list_unusedEvents.Count);
+        int nextEvent = 0;
+        if(force_event < 0) Random.Range(0, list_unusedEvents.Count);
+        else nextEvent = force_event;
 
         currEvent = list_unusedEvents[nextEvent];//Instantiate(list_unusedEvents[nextEvent], Vector3.zero, Quaternion.identity);
         currEvent.SetActive(true);

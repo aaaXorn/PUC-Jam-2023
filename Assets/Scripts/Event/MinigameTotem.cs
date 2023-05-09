@@ -16,22 +16,39 @@ namespace nEvent
         private int hits = 0;
         private int hits_needed = 3;
 
+        private List<GameObject> list_spawnedStones = new List<GameObject>();
+
+        [SerializeField]
+        private GameObject obj_totem;
+
         private void Awake()
         {
             rTransf = GetComponent<RectTransform>();
         }
 
-        private void Start()
+        private void OnEnable()
         {
             SpawnStone();
+        }
+        private void OnDisable()
+        {
+            foreach(GameObject obj in list_spawnedStones)
+            {
+                Destroy(obj);
+            }
+
+            list_spawnedStones.Clear();
+            obj_totem.tag = "MinigameTarget";
         }
 
         public void SpawnStone()
         {
-            StoneMinigameTotem _stone = Instantiate(prefab_stone, rTransf_stoneSpawn).GetComponent<StoneMinigameTotem>();
+            GameObject _stone = Instantiate(prefab_stone, rTransf_stoneSpawn);
             _stone.transform.parent = rTransf;
 
-            _stone.minigame = this;
+            list_spawnedStones.Add(_stone);
+
+            _stone.GetComponent<StoneMinigameTotem>().minigame = this;
         }
 
         public void Hit()

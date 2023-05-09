@@ -15,6 +15,19 @@ namespace nEvent
         [SerializeField]
         private float barra_targetHeight = 500f;
 
+        private Vector2 initPos;
+
+        private void Start()
+        {
+            initPos = rTransf_barra.anchoredPosition;
+        }
+
+        private void OnDisable()
+        {
+            rTransf_barra.anchoredPosition = initPos;
+            rTransf_barra.sizeDelta = new Vector2(rTransf_barra.sizeDelta.x, 0f);
+        }
+
         private void Update()
         {
             if(InputSP.s_singleton.input_interactDown)

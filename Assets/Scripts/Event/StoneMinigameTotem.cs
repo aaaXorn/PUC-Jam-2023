@@ -23,6 +23,8 @@ namespace nEvent
         [SerializeField]
         private float falling_spd = 150f;
 
+        private bool isPlaced = false;
+
         private void Awake()
         {
             rTransf = GetComponent<RectTransform>();
@@ -71,9 +73,12 @@ namespace nEvent
 
         private void OnCollisionEnter2D(Collision2D other)
         {
-            print("aaa");
+            if(isPlaced) return;
+
             if(other.gameObject.CompareTag("MinigameTarget"))
             {
+                isPlaced = true;
+
                 gameObject.tag = "MinigameTarget";
                 other.gameObject.tag = "Untagged";
                 minigame.Hit();
@@ -85,8 +90,6 @@ namespace nEvent
             }
 
             rb.velocity = Vector2.zero;
-
-            Destroy(this);
         }
     }
 }

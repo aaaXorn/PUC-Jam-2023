@@ -25,6 +25,19 @@ namespace nEvent
         [SerializeField]
         private int points_perHit = 1, points_perMiss = 2;
 
+        private Vector2 bolinha_initPos;
+
+        private void Start()
+        {
+            bolinha_initPos = rTransf_bolinha.anchoredPosition;
+        }
+
+        private void OnDisable()
+        {
+            rTransf_bolinha.anchoredPosition = bolinha_initPos;
+            bolinha_goUp = true;
+        }
+
         private void Update()
         {
             if(bolinha_goUp)
