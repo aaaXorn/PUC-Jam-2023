@@ -20,6 +20,9 @@ namespace nController
         public bool inMinigameArea;
         public EventTrigger eventT;
 
+        [SerializeField]
+        private Animator anim;
+
         private void Awake()
         {
             if(move == null) move = GetComponent<Movement>();
@@ -57,6 +60,8 @@ namespace nController
 
             //movement and gravity
             move.Move(_input);
+
+            anim.SetFloat("Velocidade", _input.magnitude);
         }
     }
 }
