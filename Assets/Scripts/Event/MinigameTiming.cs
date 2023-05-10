@@ -27,14 +27,22 @@ namespace nEvent
 
         private Vector2 bolinha_initPos;
 
+        [SerializeField]
+        private RectTransform rTransf_barra;
+        private Vector2 barra_initPos;
+        private float barra_targetWidth = 300f;
+
         private void Start()
         {
             bolinha_initPos = rTransf_bolinha.anchoredPosition;
+            barra_initPos = rTransf_barra.anchoredPosition;
         }
 
         private void OnDisable()
         {
             rTransf_bolinha.anchoredPosition = bolinha_initPos;
+            rTransf_barra.anchoredPosition = barra_initPos;
+            rTransf_barra.sizeDelta = new Vector2(0f, rTransf_barra.sizeDelta.y);
             bolinha_goUp = true;
         }
 
@@ -88,6 +96,9 @@ namespace nEvent
                 points = points_needed;
                 GameManager.s_singleton.WinEvent();
             }
+            
+            rTransf_barra.sizeDelta = new Vector2 (barra_targetWidth * points / points_needed, rTransf_barra.sizeDelta.y);
+            rTransf_barra.anchoredPosition = barra_initPos + new Vector2(rTransf_barra.sizeDelta.x/2, 0f);
 
             print("hit");
         }

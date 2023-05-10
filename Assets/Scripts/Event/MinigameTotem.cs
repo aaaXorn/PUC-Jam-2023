@@ -44,7 +44,7 @@ namespace nEvent
         public void SpawnStone()
         {
             GameObject _stone = Instantiate(prefab_stone, rTransf_stoneSpawn);
-            _stone.transform.parent = rTransf;
+            _stone.transform.SetParent(rTransf, true);
 
             list_spawnedStones.Add(_stone);
 

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -27,7 +28,7 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private float gameOverTimer = 15f;
 
-    [SerializeField]
+    [Tooltip("Menor que 0 é aleatório")] [SerializeField]
     private int force_event = -1;
 
     private void Awake()
@@ -83,6 +84,8 @@ public class GameManager : MonoBehaviour
     private void GameOver()
     {
         stopTimer = true;
+
+        SceneManager.LoadScene("GameOver");
     }
 
     public void WinEvent()
@@ -98,7 +101,7 @@ public class GameManager : MonoBehaviour
             stopTimer = true;
 
             //win game
-            print("win");
+            SceneManager.LoadScene("WinScene");
         }
     }
     #endregion
