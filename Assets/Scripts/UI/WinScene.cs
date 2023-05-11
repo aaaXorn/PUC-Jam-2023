@@ -7,7 +7,7 @@ namespace nUI
 {
     public class WinScene : MonoBehaviour
     {
-        private string id_loadScene = "SampleScene";
+        private string id_loadScene = "MainMenu";
 
         private void Start()
         {

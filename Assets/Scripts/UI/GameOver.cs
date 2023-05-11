@@ -7,7 +7,7 @@ namespace nUI
 {
     public class GameOver : MonoBehaviour
     {
-        private string id_loadScene = "SampleScene";
+        private string id_loadScene = "Game";
 
         private void Start()
         {
