@@ -16,4 +16,4 @@ MonoBehaviour:
   max_spd: 10
   decay_spd: 10
   rot_spd: 10
-  gravity: -9.81
+  gravity: -15
