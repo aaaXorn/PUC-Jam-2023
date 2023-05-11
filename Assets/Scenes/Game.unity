@@ -12129,10 +12129,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 888906411, guid: 896988c7ffffe6646be37feb3b57ad51, type: 3}
-      propertyPath: m_Name
-      value: MinigameEncherBalde
-      objectReference: {fileID: 0}
     - target: {fileID: 888906416, guid: 896988c7ffffe6646be37feb3b57ad51, type: 3}
       propertyPath: m_LocalPosition.x
       value: -27.47
@@ -12141,10 +12137,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 46.49
       objectReference: {fileID: 0}
-    - target: {fileID: 933415942, guid: 896988c7ffffe6646be37feb3b57ad51, type: 3}
-      propertyPath: m_Name
-      value: MinigameEmpilharPedras
-      objectReference: {fileID: 0}
     - target: {fileID: 933415947, guid: 896988c7ffffe6646be37feb3b57ad51, type: 3}
       propertyPath: m_LocalPosition.x
       value: -45.1
@@ -12152,10 +12144,6 @@ PrefabInstance:
     - target: {fileID: 933415947, guid: 896988c7ffffe6646be37feb3b57ad51, type: 3}
       propertyPath: m_LocalPosition.z
       value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1453147717, guid: 896988c7ffffe6646be37feb3b57ad51, type: 3}
-      propertyPath: m_Name
-      value: MinigameCortarArvore
       objectReference: {fileID: 0}
     - target: {fileID: 1453147722, guid: 896988c7ffffe6646be37feb3b57ad51, type: 3}
       propertyPath: m_LocalPosition.x

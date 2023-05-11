@@ -9,22 +9,28 @@ namespace nEvent
     {
         public GameObject obj_minigame;
 
-        private void OnTriggerEnter(Collider other)
+        protected void OnTriggerEnter(Collider other)
         {
             PlayerController.s_singleton.inMinigameArea = true;
             PlayerController.s_singleton.eventT = this;
         }
 
-        private void OnTriggerExit(Collider other)
+        protected void OnTriggerExit(Collider other)
         {
             PlayerController.s_singleton.inMinigameArea = false;
+            if(PlayerController.s_singleton.eventT == this) PlayerController.s_singleton.eventT = null;
 
             if(obj_minigame.activeSelf) ExitMinigame();
         }
 
+        protected virtual bool EnableCondition()
+        {
+            return (!obj_minigame.activeSelf);
+        }
+
         public void EnableMinigame()
         {
-            if(obj_minigame.activeSelf) return;
+            if(!EnableCondition()) return;
 
             obj_minigame.SetActive(true);
             PlayerController.s_singleton.canMove = false;

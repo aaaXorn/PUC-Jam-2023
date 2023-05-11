@@ -23,6 +23,12 @@ namespace nController
         [SerializeField]
         private Animator anim;
 
+        [SerializeField]
+        private Transform transf_grab;
+
+        [SerializeField]
+        private Transform transf_grabbedObj;
+
         private void Awake()
         {
             if(move == null) move = GetComponent<Movement>();
@@ -44,9 +50,39 @@ namespace nController
 
                 move.Rotate(_input);
 
-                if(InputSP.s_singleton.input_interactDown && eventT != null)
+                if(InputSP.s_singleton.input_interactDown)
                 {
-                    eventT.EnableMinigame();
+                    if(transf_grabbedObj != null)
+                    {
+                        transf_grabbedObj.parent = null;
+
+                        Rigidbody _rb = transf_grabbedObj.GetComponent<Rigidbody>();
+                        if(_rb != null)
+                        {
+                            _rb.isKinematic = false;
+                        }
+                        
+                        transf_grabbedObj = null;
+                    }
+                    else if(eventT != null)
+                        eventT.EnableMinigame();
+                    else
+                    {
+                        Collider[] _colls = Physics.OverlapSphere(transf_grab.position, 1f, (1<<7), QueryTriggerInteraction.Ignore);
+
+                        if(_colls.Length > 0)
+                        {
+                            transf_grabbedObj = _colls[0].transform;
+                            transf_grabbedObj.position = transf_grab.position;
+                            transf_grabbedObj.SetParent(transform, true);
+
+                            Rigidbody _rb = transf_grabbedObj.GetComponent<Rigidbody>();
+                            if(_rb != null)
+                            {
+                                _rb.isKinematic = true;
+                            }
+                        }
+                    }
                 }
             }
             else
