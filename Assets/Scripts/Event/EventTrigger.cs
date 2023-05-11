@@ -7,6 +7,8 @@ namespace nEvent
 {
     public class EventTrigger : MonoBehaviour
     {
+        public float eventTime = 20f;
+
         public GameObject obj_minigame;
 
         protected void OnTriggerEnter(Collider other)

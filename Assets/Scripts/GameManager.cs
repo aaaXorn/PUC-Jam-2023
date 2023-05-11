@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using nEvent;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -25,15 +27,23 @@ public class GameManager : MonoBehaviour
     private float eventCD = 15f;
 
     private float gameOverTime = 0f;
-    [SerializeField]
-    private float gameOverTimer = 15f;
 
     [Tooltip("Menor que 0 é aleatório")] [SerializeField]
     private int force_event = -1;
 
+    [SerializeField]
+    private TMP_Text timerText;
+    [SerializeField]
+    private Color clr_eventCD, clr_gameOverTime;
+
     private void Awake()
     {
         s_singleton = this;
+    }
+
+    private void Start()
+    {
+        timerText.color = clr_eventCD;
     }
 
     private void Update()
@@ -53,15 +63,17 @@ public class GameManager : MonoBehaviour
             }
 
             eventTime += Time.deltaTime;
+            timerText.text = (15f - eventTime).ToString("F2");
         }
         else
         {
-            if(gameOverTime > gameOverTimer)
+            if(gameOverTime <= 0f)
             {
                 GameOver();
             }
 
-            gameOverTime += Time.deltaTime;
+            gameOverTime -= Time.deltaTime;
+            timerText.text = gameOverTime.ToString("F2");
         }
     }
     #endregion
@@ -70,7 +82,6 @@ public class GameManager : MonoBehaviour
     private void StartEvent()
     {
         isInEvent = true;
-        gameOverTime = 0f;
 
         int nextEvent = 0;
         if(force_event < 0) Random.Range(0, list_unusedEvents.Count);
@@ -79,6 +90,10 @@ public class GameManager : MonoBehaviour
         currEvent = list_unusedEvents[nextEvent];//Instantiate(list_unusedEvents[nextEvent], Vector3.zero, Quaternion.identity);
         currEvent.SetActive(true);
         list_unusedEvents.RemoveAt(nextEvent);
+
+        gameOverTime = currEvent.GetComponent<EventTrigger>().eventTime;
+        timerText.text = gameOverTime.ToString("F2");
+        timerText.color = clr_gameOverTime;
     }
 
     private void GameOver()
@@ -95,6 +110,8 @@ public class GameManager : MonoBehaviour
 
         isInEvent = false;
         eventTime = 0f;
+        timerText.text = (15f - eventTime).ToString("F2");
+        timerText.color = clr_eventCD;
 
         if(list_unusedEvents.Count <= 0)
         {
