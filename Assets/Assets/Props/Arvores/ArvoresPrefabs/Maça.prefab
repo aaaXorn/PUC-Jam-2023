@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4332080824244276821}
   - component: {fileID: 842594363217510896}
   - component: {fileID: 3194609396579792186}
+  - component: {fileID: 127365287708872167}
   m_Layer: 0
   m_Name: "Ma\xE7a"
   m_TagString: Untagged
@@ -85,3 +86,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &127365287708872167
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3987220735321756911}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.013663635
+  m_Height: 0.021475209
+  m_Direction: 1
+  m_Center: {x: -0.000002949033, y: 0.000009624752, z: 0.0030429666}
