@@ -113,6 +113,9 @@ namespace nEvent
             points -= points_perMiss;
 
             if(points < 0) points = 0;
+
+            rTransf_barra.sizeDelta = new Vector2 (barra_targetWidth * points / points_needed, rTransf_barra.sizeDelta.y);
+            rTransf_barra.anchoredPosition = barra_initPos + new Vector2(rTransf_barra.sizeDelta.x/2, 0f);
         }
     }
 }
