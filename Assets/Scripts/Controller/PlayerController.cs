@@ -63,6 +63,7 @@ namespace nController
                         }
                         
                         transf_grabbedObj = null;
+                        anim.SetBool("Item", false);
                     }
                     else if(eventT != null)
                         eventT.EnableMinigame();
@@ -81,6 +82,8 @@ namespace nController
                             {
                                 _rb.isKinematic = true;
                             }
+
+                            anim.SetBool("Item", true);
                         }
                     }
                 }
