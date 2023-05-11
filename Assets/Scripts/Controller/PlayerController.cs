@@ -37,7 +37,10 @@ namespace nController
             if(canMove)
             {
                 //if the player can't move, input is null by default
-                _input = new Vector3(InputSP.s_singleton.input_move.x, 0, InputSP.s_singleton.input_move.y).normalized;
+                _input = new Vector3(InputSP.s_singleton.input_move.x, 0, InputSP.s_singleton.input_move.y);
+                _input = Camera.main.transform.TransformDirection(_input);
+                _input.y = 0f;
+                _input = _input.normalized;
 
                 move.Rotate(_input);
 
