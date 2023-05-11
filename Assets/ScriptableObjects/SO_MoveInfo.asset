@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f04dc5f7f5bdd024697bc59ad8d4a074, type: 3}
   m_Name: SO_MoveInfo
   m_EditorClassIdentifier: 
-  spd: 5
-  max_spd: 5
+  spd: 10
+  max_spd: 10
   decay_spd: 10
   rot_spd: 10
   gravity: -9.81
