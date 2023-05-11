@@ -686,6 +686,14 @@ PrefabInstance:
       propertyPath: array_obj_import.Array.data[9]
       value: 
       objectReference: {fileID: 1723391480}
+    - target: {fileID: 8172097008699639038, guid: 896988c7ffffe6646be37feb3b57ad51, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8172097008862756541, guid: 896988c7ffffe6646be37feb3b57ad51, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8172097009044314787, guid: 896988c7ffffe6646be37feb3b57ad51, type: 3}
       propertyPath: force_event
       value: 2
