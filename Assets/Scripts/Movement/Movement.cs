@@ -21,10 +21,19 @@ namespace nMovement
         //gradually rotates object towards direction
         public virtual void Rotate(Vector3 _dir)
         {
-            //gets the next rotation vector
-            Vector3 _rot = Vector3.RotateTowards(transform.forward, _dir, so_move.rot_spd * Time.deltaTime, 0f);
-            //applies it as a quaternion
-            transform.rotation = Quaternion.LookRotation(_rot);
+            float _angle = Vector3.Angle(transform.forward, _dir);
+
+            if(_angle < 90f)
+            {
+                //gets the next rotation vector
+                Vector3 _rot = Vector3.RotateTowards(transform.forward, _dir, so_move.rot_spd * Time.deltaTime, 0f);
+                //applies it as a quaternion
+                transform.rotation = Quaternion.LookRotation(_rot);
+            }
+            else
+            {
+                transform.rotation = Quaternion.LookRotation(_dir);
+            }
         }
 
         //gravity
