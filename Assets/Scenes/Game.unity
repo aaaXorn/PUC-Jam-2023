@@ -2541,8 +2541,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 31.900238, y: 142.81792, z: 173.47025}
-  m_Center: {x: -148.12117, y: 50.7047, z: 10.991623}
+  m_Size: {x: 39.654266, y: 142.81792, z: 173.47025}
+  m_Center: {x: -144.24416, y: 50.704704, z: 10.991623}
 --- !u!65 &476691525
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2567,8 +2567,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 165.32533, y: 135.60071, z: 37.168823}
-  m_Center: {x: -70.19778, y: 54.31334, z: -71.762405}
+  m_Size: {x: 165.32533, y: 135.60071, z: 42.143066}
+  m_Center: {x: -70.19778, y: 54.31334, z: -69.27528}
 --- !u!1001 &494453918
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10394,6 +10394,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1508239803}
+  - component: {fileID: 1508239804}
   m_Layer: 0
   m_Name: Igreja
   m_TagString: Untagged
@@ -10417,6 +10418,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1508239804
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1508239802}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.039684, y: 12.812533, z: 10.04705}
+  m_Center: {x: -11.760046, y: 4.0560355, z: 15.79591}
 --- !u!1001 &1512470497
 PrefabInstance:
   m_ObjectHideFlags: 0
