@@ -110,6 +110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc7342e18e6185c4bae1cc4339af914d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  text_gameOver: "O rio foi amaldi\xE7oado."
   eventTime: 15
   obj_minigame: {fileID: 8172097010147476543}
   event_enable:
@@ -241,6 +242,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f48816325f8c8b419cbdc9dd5476955, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  text_gameOver: "O vulc\xE3o entrou em erup\xE7\xE3o."
   eventTime: 40
   obj_minigame: {fileID: 8172097008699639038}
   event_enable:
@@ -384,6 +386,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc7342e18e6185c4bae1cc4339af914d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  text_gameOver: O terremoto destruiu a cidade.
   eventTime: 20
   obj_minigame: {fileID: 8172097008862756541}
   event_enable:

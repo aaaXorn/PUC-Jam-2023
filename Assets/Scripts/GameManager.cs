@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using nEvent;
 using TMPro;
+using nUI;
+using nEvent;
 
 public class GameManager : MonoBehaviour
 {
@@ -89,8 +91,9 @@ public class GameManager : MonoBehaviour
         isInEvent = true;
 
         int nextEvent = 0;
-        if(force_event < 0) Random.Range(0, list_unusedEvents.Count);
+        if(force_event < 0) nextEvent = Random.Range(0, list_unusedEvents.Count);
         else nextEvent = force_event;
+        print(list_unusedEvents.Count + " " + nextEvent);
 
         currEvent = list_unusedEvents[nextEvent];//Instantiate(list_unusedEvents[nextEvent], Vector3.zero, Quaternion.identity);
         currEvent.SetActive(true);
@@ -103,6 +106,8 @@ public class GameManager : MonoBehaviour
 
     private void GameOver()
     {
+        nUI.GameOver.text_gameOver = currEvent.GetComponent<EventTrigger>().text_gameOver;
+
         stopTimer = true;
 
         SceneManager.LoadScene("GameOver");
