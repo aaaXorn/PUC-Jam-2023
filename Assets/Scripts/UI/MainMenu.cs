@@ -10,7 +10,7 @@ namespace nUI
     public class MainMenu : MonoBehaviour
     {
         [Tooltip("Gameplay scene.")] [SerializeField]
-        private string id_scene_gameplay = "Game";
+        private string id_scene_gameplay = "Plot";
 
         [Tooltip("Option menu.")] [SerializeField]
         private GameObject option_menu;

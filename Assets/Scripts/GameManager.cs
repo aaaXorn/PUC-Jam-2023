@@ -62,12 +62,16 @@ public class GameManager : MonoBehaviour
 
         if(!isInEvent)
         {
-            if(eventTime > eventCD)
+            if(eventTime >= eventCD)
             {
                 StartEvent();
+                eventTime = eventCD;
+            }
+            else
+            {
+                eventTime += Time.deltaTime;
             }
 
-            eventTime += Time.deltaTime;
             timerText.text = (eventCD - eventTime).ToString("F2");
         }
         else
@@ -75,9 +79,13 @@ public class GameManager : MonoBehaviour
             if(gameOverTime <= 0f)
             {
                 GameOver();
+                gameOverTime = 0f;
+            }
+            else
+            {
+                gameOverTime -= Time.deltaTime;
             }
 
-            gameOverTime -= Time.deltaTime;
             timerText.text = gameOverTime.ToString("F2");
         }
     }

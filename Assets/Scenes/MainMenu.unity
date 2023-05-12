@@ -692,7 +692,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 24300002, guid: a4529eb0bf39f7b43bd2c77d1c7ba849, type: 2}
   m_audioClip: {fileID: 8300000, guid: bb9fa749a7b829e4c9cef9d22f3382b4, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.9
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1397,7 +1397,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2eeaa0128a8b4324caf55d89a856d31e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id_scene_gameplay: Game
+  id_scene_gameplay: Plot
   option_menu: {fileID: 0}
   h2p_menu: {fileID: 0}
   audioM: {fileID: 24100000, guid: a4529eb0bf39f7b43bd2c77d1c7ba849, type: 2}
