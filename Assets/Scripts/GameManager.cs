@@ -63,7 +63,7 @@ public class GameManager : MonoBehaviour
             }
 
             eventTime += Time.deltaTime;
-            timerText.text = (15f - eventTime).ToString("F2");
+            timerText.text = (eventCD - eventTime).ToString("F2");
         }
         else
         {
@@ -110,7 +110,7 @@ public class GameManager : MonoBehaviour
 
         isInEvent = false;
         eventTime = 0f;
-        timerText.text = (15f - eventTime).ToString("F2");
+        timerText.text = (eventCD - eventTime).ToString("F2");
         timerText.color = clr_eventCD;
 
         if(list_unusedEvents.Count <= 0)

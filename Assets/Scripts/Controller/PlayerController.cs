@@ -29,6 +29,9 @@ namespace nController
         [SerializeField]
         private Transform transf_grabbedObj;
 
+        [SerializeField]
+        private GameObject obj_profecia;
+
         private void Awake()
         {
             if(move == null) move = GetComponent<Movement>();
@@ -66,7 +69,10 @@ namespace nController
                         anim.SetBool("Item", false);
                     }
                     else if(eventT != null)
+                    {
                         eventT.EnableMinigame();
+                        if(obj_profecia.activeSelf) OpenCloseProfecia(false);
+                    }
                     else
                     {
                         Collider[] _colls = Physics.OverlapSphere(transf_grab.position, 1f, (1<<7), QueryTriggerInteraction.Ignore);
@@ -87,6 +93,11 @@ namespace nController
                         }
                     }
                 }
+
+                if(Input.GetKeyDown(KeyCode.Escape))
+                {
+                    OpenCloseProfecia();
+                }
             }
             else
             {
@@ -94,9 +105,17 @@ namespace nController
                 {
                     canMove = true;
                 }
-                else if(Input.GetKeyDown(KeyCode.Escape) && eventT.obj_minigame.activeSelf)
+                
+                if(Input.GetKeyDown(KeyCode.Escape))
                 {
-                    eventT.ExitMinigame();
+                    if(eventT != null && eventT.obj_minigame.activeSelf)
+                    {
+                        eventT.ExitMinigame();
+                    }
+                    else
+                    {
+                        OpenCloseProfecia();
+                    }
                 }
             }
 
@@ -104,6 +123,16 @@ namespace nController
             move.Move(_input);
 
             anim.SetFloat("Velocidade", _input.magnitude);
+        }
+
+        private void OpenCloseProfecia()
+        {
+            OpenCloseProfecia(!obj_profecia.activeSelf);
+        }
+
+        private void OpenCloseProfecia(bool _active)
+        {
+            obj_profecia.SetActive(_active);
         }
     }
 }
