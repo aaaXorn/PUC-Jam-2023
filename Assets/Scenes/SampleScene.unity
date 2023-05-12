@@ -609,6 +609,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 176.3682
       objectReference: {fileID: 0}
+    - target: {fileID: 3835548779994563651, guid: 896988c7ffffe6646be37feb3b57ad51, type: 3}
+      propertyPath: directionalLight
+      value: 
+      objectReference: {fileID: 705507994}
+    - target: {fileID: 3835548779994563651, guid: 896988c7ffffe6646be37feb3b57ad51, type: 3}
+      propertyPath: clr_lightningVolcano.g
+      value: 0.627451
+      objectReference: {fileID: 0}
     - target: {fileID: 3895090150850506892, guid: 896988c7ffffe6646be37feb3b57ad51, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.99999964
@@ -775,7 +783,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8172097009044314787, guid: 896988c7ffffe6646be37feb3b57ad51, type: 3}
       propertyPath: force_event
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8172097009044314787, guid: 896988c7ffffe6646be37feb3b57ad51, type: 3}
       propertyPath: gameOverTimer

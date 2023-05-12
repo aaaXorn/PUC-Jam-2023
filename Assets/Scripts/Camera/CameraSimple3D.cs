@@ -60,5 +60,18 @@ namespace nCamera
         {
             shake = _shake ? 0.05f : 0f;
         }
+
+        [SerializeField]
+        protected Color clr_lightningDefault, clr_lightningVolcano;
+
+        [SerializeField]
+        protected Light directionalLight;
+
+        public void VolcanoShake(bool _shake)
+        {
+            shake = _shake ? 0.075f : 0f;
+
+            directionalLight.color = _shake ? clr_lightningVolcano : clr_lightningDefault;
+        }
     }
 }
