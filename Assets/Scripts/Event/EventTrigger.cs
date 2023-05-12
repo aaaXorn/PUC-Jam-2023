@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using nController;
+using UnityEngine.Events;
 
 namespace nEvent
 {
@@ -10,6 +11,17 @@ namespace nEvent
         public float eventTime = 20f;
 
         public GameObject obj_minigame;
+
+        public UnityEvent event_enable, event_disable;
+
+        protected void OnEnable()
+        {
+            event_enable.Invoke();
+        }
+        protected void OnDisable()
+        {
+            event_disable.Invoke();
+        }
 
         protected void OnTriggerEnter(Collider other)
         {
