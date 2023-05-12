@@ -114,7 +114,19 @@ MonoBehaviour:
   obj_minigame: {fileID: 8172097010147476543}
   event_enable:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3835548779994563651}
+        m_TargetAssemblyTypeName: nCamera.CameraSimple3D, Assembly-CSharp
+        m_MethodName: RioFlash
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   event_disable:
     m_PersistentCalls:
       m_Calls: []
@@ -1543,7 +1555,8 @@ MonoBehaviour:
   camOffset: {x: 7.5, y: 12, z: 0}
   shake: 0
   clr_lightningDefault: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  clr_lightningVolcano: {r: 1, g: 0, b: 0, a: 1}
+  clr_lightningVolcano: {r: 1, g: 0.627451, b: 0, a: 1}
+  clr_lightningRiver: {r: 0, g: 0.16738506, b: 0.6132076, a: 1}
   directionalLight: {fileID: 0}
 --- !u!1 &8172097009044314813
 GameObject:

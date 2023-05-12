@@ -62,7 +62,8 @@ namespace nCamera
         }
 
         [SerializeField]
-        protected Color clr_lightningDefault, clr_lightningVolcano;
+        protected Color clr_lightningDefault, clr_lightningVolcano, clr_lightningRiver;
+        protected Color clr_flash;
 
         [SerializeField]
         protected Light directionalLight;
@@ -71,7 +72,34 @@ namespace nCamera
         {
             shake = _shake ? 0.075f : 0f;
 
-            directionalLight.color = _shake ? clr_lightningVolcano : clr_lightningDefault;
+            if(!_shake) return;
+
+            clr_flash = clr_lightningVolcano;
+            StartCoroutine("Flash");
+        }
+
+        public void RioFlash()
+        {
+            clr_flash = clr_lightningRiver;
+            StartCoroutine("Flash");
+        }
+
+        protected IEnumerator Flash()
+        {
+            float _timer = 0f;
+            while(_timer < 2f)
+            {
+                print("test");
+                Color clr_lerp = Color.Lerp(clr_lightningDefault, clr_flash, Mathf.PingPong(_timer, 1f));
+                directionalLight.color = clr_lerp;
+
+                yield return new WaitForEndOfFrame();
+                _timer += Time.deltaTime;
+            }
+
+            directionalLight.color = clr_lightningDefault;
+
+            yield break;
         }
     }
 }
