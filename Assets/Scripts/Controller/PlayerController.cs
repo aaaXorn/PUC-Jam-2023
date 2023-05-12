@@ -63,8 +63,9 @@ namespace nController
                         if(_rb != null)
                         {
                             _rb.isKinematic = false;
+                            _rb.constraints = RigidbodyConstraints.None;
                         }
-                        
+
                         transf_grabbedObj = null;
                         anim.SetBool("Item", false);
                     }
@@ -87,6 +88,7 @@ namespace nController
                             if(_rb != null)
                             {
                                 _rb.isKinematic = true;
+                                _rb.constraints = RigidbodyConstraints.FreezeAll;
                             }
 
                             anim.SetBool("Item", true);
@@ -121,6 +123,8 @@ namespace nController
 
             //movement and gravity
             move.Move(_input);
+
+            if(transf_grabbedObj != null) transf_grabbedObj.position = transf_grab.position;
 
             anim.SetFloat("Velocidade", _input.magnitude);
         }
