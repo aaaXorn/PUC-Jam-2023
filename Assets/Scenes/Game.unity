@@ -1559,6 +1559,92 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7386174333423217950, guid: bcf7d6bc896f71a45aa8680dbc72eca2, type: 3}
   m_PrefabInstance: {fileID: 277439216}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &286775806
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 286775810}
+  - component: {fileID: 286775809}
+  - component: {fileID: 286775808}
+  - component: {fileID: 286775807}
+  m_Layer: 0
+  m_Name: Rio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!136 &286775807
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 286775806}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 7.45092
+  m_Height: 15.207241
+  m_Direction: 2
+  m_Center: {x: 9.450386, y: -0.5258503, z: -12.201258}
+--- !u!136 &286775808
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 286775806}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 17.227583
+  m_Height: 37.06744
+  m_Direction: 1
+  m_Center: {x: -28.340591, y: 0.092660904, z: 74.25107}
+--- !u!136 &286775809
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 286775806}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 22.705692
+  m_Height: 57.80638
+  m_Direction: 0
+  m_Center: {x: 18.160744, y: 0.4359169, z: 6.4654655}
+--- !u!4 &286775810
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 286775806}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 141.59, y: 1.52, z: 67.22849}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1572088349}
+  - {fileID: 1967940044}
+  - {fileID: 1522244428}
+  - {fileID: 1439793170}
+  - {fileID: 1455410668}
+  - {fileID: 1413900891}
+  - {fileID: 1499854755}
+  - {fileID: 2001186456}
+  - {fileID: 1211941472}
+  - {fileID: 1935298910}
+  m_Father: {fileID: 0}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &308068394
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2377,6 +2463,93 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &476691521
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 476691522}
+  - component: {fileID: 476691526}
+  - component: {fileID: 476691525}
+  - component: {fileID: 476691524}
+  - component: {fileID: 476691523}
+  m_Layer: 0
+  m_Name: Bounds
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &476691522
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 476691521}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 141.59, y: 1.52, z: 67.22849}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &476691523
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 476691521}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 34.612404, y: 135.27051, z: 173.47025}
+  m_Center: {x: 18.713917, y: 54.47841, z: 10.991623}
+--- !u!65 &476691524
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 476691521}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 31.900238, y: 142.81792, z: 173.47025}
+  m_Center: {x: -148.12117, y: 50.7047, z: 10.991623}
+--- !u!65 &476691525
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 476691521}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 165.32533, y: 136.73166, z: 37.168823}
+  m_Center: {x: -70.19778, y: 53.747833, z: 92.3}
+--- !u!65 &476691526
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 476691521}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 165.32533, y: 135.60071, z: 37.168823}
+  m_Center: {x: -70.19778, y: 54.31334, z: -71.762405}
 --- !u!1001 &494453918
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8123,6 +8296,52 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7386174333423217950, guid: bcf7d6bc896f71a45aa8680dbc72eca2, type: 3}
   m_PrefabInstance: {fileID: 1195772327}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1211941471
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1211941472}
+  - component: {fileID: 1211941473}
+  m_Layer: 0
+  m_Name: Rio2.0 (8)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1211941472
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1211941471}
+  m_LocalRotation: {x: -0, y: -0.6961765, z: -0, w: 0.71787065}
+  m_LocalPosition: {x: 1.93, y: -0.66, z: 31.71}
+  m_LocalScale: {x: 0.63960314, y: 1.0244104, z: 0.36380324}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 286775810}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: -88.242, z: 0}
+--- !u!136 &1211941473
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1211941471}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 4.4716487
+  m_Height: 25.182858
+  m_Direction: 2
+  m_Center: {x: -0.87935245, y: 0, z: 5.942866}
 --- !u!1001 &1218378668
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9295,6 +9514,66 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3537868412170822655, guid: 6a2628fb07e7d5544b9d9bd100b7b23b, type: 3}
   m_PrefabInstance: {fileID: 1393860319}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1413900890
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1413900891}
+  - component: {fileID: 1413900892}
+  - component: {fileID: 1413900893}
+  m_Layer: 0
+  m_Name: Rio2.0 (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1413900891
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1413900890}
+  m_LocalRotation: {x: -0, y: -0.97836775, z: -0, w: 0.20687354}
+  m_LocalPosition: {x: -48.713997, y: -1.4200001, z: 48.579887}
+  m_LocalScale: {x: 0.62966925, y: 1.0084999, z: 0.8221493}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 286775810}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: -156.122, z: 0}
+--- !u!65 &1413900892
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1413900890}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 8.011083, y: 5.4173717, z: 10.394311}
+  m_Center: {x: -1.8360323, y: 2.2086856, z: -0.6191095}
+--- !u!136 &1413900893
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1413900890}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 2.4594061
+  m_Height: 9.722144
+  m_Direction: 2
+  m_Center: {x: -0.57113445, y: 0, z: 4.594273}
 --- !u!1001 &1431695419
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9506,6 +9785,51 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7373569798802792415, guid: bbf18963549ed0646a8489a520d9d276, type: 3}
   m_PrefabInstance: {fileID: 1436746501}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1439793169
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1439793170}
+  - component: {fileID: 1439793171}
+  m_Layer: 0
+  m_Name: Rio2.0 (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1439793170
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1439793169}
+  m_LocalRotation: {x: -0, y: -0.22605802, z: -0, w: 0.9741139}
+  m_LocalPosition: {x: 2.1608, y: -1.4200001, z: 34.741}
+  m_LocalScale: {x: 0.62966925, y: 1.0084999, z: 0.8221493}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 286775810}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: -26.13, z: 0}
+--- !u!65 &1439793171
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1439793169}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 12.167675, y: 5.4173717, z: 16.679762}
+  m_Center: {x: -4.5039315, y: 2.2086856, z: -1.6218439}
 --- !u!1001 &1448730260
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9572,6 +9896,51 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 697699987784427073, guid: 774f880965cc28246bf3b2394550d8cc, type: 3}
   m_PrefabInstance: {fileID: 1448730260}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1455410667
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1455410668}
+  - component: {fileID: 1455410669}
+  m_Layer: 0
+  m_Name: Rio2.0 (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1455410668
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1455410667}
+  m_LocalRotation: {x: -0, y: -0.7052928, z: -0, w: 0.7089162}
+  m_LocalPosition: {x: 0.71, y: -1.4200001, z: 29.02}
+  m_LocalScale: {x: 0.62966925, y: 1.0084999, z: 0.8221493}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 286775810}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: -89.706, z: 0}
+--- !u!65 &1455410669
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1455410667}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 16.757452, y: 5.4173717, z: 16.67976}
+  m_Center: {x: -7.0441914, y: 2.2086856, z: -1.6218452}
 --- !u!1001 &1461789439
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9638,6 +10007,84 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3456060678554291608, guid: 05783c6b61f092042b5a6a28662ec98c, type: 3}
   m_PrefabInstance: {fileID: 1461789439}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1467204000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1467204003}
+  - component: {fileID: 1467204002}
+  - component: {fileID: 1467204001}
+  m_Layer: 0
+  m_Name: Terrain_(0.00, -1.60, 150.00)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!154 &1467204001
+TerrainCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467204000}
+  m_Material: {fileID: 0}
+  m_Enabled: 1
+  m_TerrainData: {fileID: 15600000, guid: ab3116c87bf3d244ebfdc1c2ea168938, type: 2}
+  m_EnableTreeColliders: 1
+--- !u!218 &1467204002
+Terrain:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467204000}
+  m_Enabled: 1
+  serializedVersion: 6
+  m_TerrainData: {fileID: 15600000, guid: ab3116c87bf3d244ebfdc1c2ea168938, type: 2}
+  m_TreeDistance: 5000
+  m_TreeBillboardDistance: 50
+  m_TreeCrossFadeLength: 5
+  m_TreeMaximumFullLODCount: 50
+  m_DetailObjectDistance: 80
+  m_DetailObjectDensity: 1
+  m_HeightmapPixelError: 5
+  m_SplatMapDistance: 1000
+  m_HeightmapMaximumLOD: 0
+  m_ShadowCastingMode: 2
+  m_DrawHeightmap: 1
+  m_DrawInstanced: 0
+  m_DrawTreesAndFoliage: 1
+  m_StaticShadowCaster: 0
+  m_ReflectionProbeUsage: 1
+  m_MaterialTemplate: {fileID: 10652, guid: 0000000000000000f000000000000000, type: 0}
+  m_BakeLightProbesForTrees: 1
+  m_PreserveTreePrototypeLayers: 0
+  m_DeringLightProbesForTrees: 1
+  m_ScaleInLightmap: 0.17066666
+  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_GroupingID: 0
+  m_RenderingLayerMask: 1
+  m_AllowAutoConnect: 1
+--- !u!4 &1467204003
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467204000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -1.6, z: 150}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1479249634
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9873,6 +10320,52 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1499854754
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1499854755}
+  - component: {fileID: 1499854756}
+  m_Layer: 0
+  m_Name: Rio2.0 (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1499854755
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1499854754}
+  m_LocalRotation: {x: -0, y: -0.92940205, z: -0, w: 0.36906883}
+  m_LocalPosition: {x: -47.129, y: -0.66, z: 47.715}
+  m_LocalScale: {x: 0.63960314, y: 1.0244104, z: 0.83511984}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 286775810}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: -136.684, z: 0}
+--- !u!136 &1499854756
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1499854754}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 2.4594061
+  m_Height: 9.722144
+  m_Direction: 2
+  m_Center: {x: -0.57113445, y: 0, z: 4.594273}
 --- !u!1 &1508239802
 GameObject:
   m_ObjectHideFlags: 0
@@ -10041,6 +10534,51 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5040058255135657491, guid: 44bfb984fdd0f9e4fa11f7efe1260bca, type: 3}
   m_PrefabInstance: {fileID: 1512574518}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1522244427
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1522244428}
+  - component: {fileID: 1522244429}
+  m_Layer: 0
+  m_Name: Rio2.0 (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1522244428
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1522244427}
+  m_LocalRotation: {x: -0, y: -0.32060528, z: -0, w: 0.94721293}
+  m_LocalPosition: {x: -3.395584, y: -1.4200001, z: 44.388664}
+  m_LocalScale: {x: 0.5530692, y: 1.0084999, z: 0.8221493}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 286775810}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: -37.399, z: 0}
+--- !u!65 &1522244429
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1522244427}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 13.295603, y: 5.4173717, z: 16.679762}
+  m_Center: {x: -5.0678973, y: 2.2086856, z: -1.6218435}
 --- !u!1001 &1528019972
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10494,6 +11032,52 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3537868412170822655, guid: 6a2628fb07e7d5544b9d9bd100b7b23b, type: 3}
   m_PrefabInstance: {fileID: 1571312873}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1572088348
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1572088349}
+  - component: {fileID: 1572088350}
+  m_Layer: 0
+  m_Name: Rio2.0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1572088349
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1572088348}
+  m_LocalRotation: {x: -0, y: 0.4668756, z: -0, w: 0.88432294}
+  m_LocalPosition: {x: -38.64, y: -8.66, z: 56.62}
+  m_LocalScale: {x: 1.0084999, y: 1.0084999, z: 1.0084999}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 286775810}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 55.663, z: 0}
+--- !u!136 &1572088350
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1572088348}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 6.5580096
+  m_Height: 30.112461
+  m_Direction: 2
+  m_Center: {x: -2.107069, y: 8.926804, z: 1.4315443}
 --- !u!1001 &1581471327
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12269,6 +12853,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: -90.178
       objectReference: {fileID: 0}
+    - target: {fileID: 8172097009044314787, guid: 896988c7ffffe6646be37feb3b57ad51, type: 3}
+      propertyPath: eventCD
+      value: 9999999
+      objectReference: {fileID: 0}
     - target: {fileID: 8172097010283698712, guid: 896988c7ffffe6646be37feb3b57ad51, type: 3}
       propertyPath: m_LocalPosition.x
       value: -33.389954
@@ -13122,6 +13710,52 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: df66f34fa123f7246bf3dc5052366f68, type: 3}
   m_PrefabInstance: {fileID: 1983157206}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1935298909
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1935298910}
+  - component: {fileID: 1935298911}
+  m_Layer: 0
+  m_Name: Rio2.0 (9)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1935298910
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1935298909}
+  m_LocalRotation: {x: -0, y: -0.71540433, z: -0, w: 0.69871074}
+  m_LocalPosition: {x: -16.27, y: 0.62, z: 59.51}
+  m_LocalScale: {x: 0.63960314, y: 1.0244104, z: 0.36380324}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 286775810}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: -91.353, z: 0}
+--- !u!136 &1935298911
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1935298909}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 4.8707514
+  m_Height: 17.715666
+  m_Direction: 0
+  m_Center: {x: 2.8660107, y: -0.70157427, z: 5.9428596}
 --- !u!1001 &1942120793
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13412,6 +14046,51 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3537868412170822655, guid: 6a2628fb07e7d5544b9d9bd100b7b23b, type: 3}
   m_PrefabInstance: {fileID: 1966161753}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1967940043
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1967940044}
+  - component: {fileID: 1967940045}
+  m_Layer: 0
+  m_Name: Rio2.0 (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1967940044
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1967940043}
+  m_LocalRotation: {x: -0, y: -0.3786375, z: -0, w: 0.9255451}
+  m_LocalPosition: {x: -17.69, y: -1.42, z: 60.19}
+  m_LocalScale: {x: 0.5530692, y: 1.0084999, z: 0.8221493}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 286775810}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: -44.499, z: 0}
+--- !u!65 &1967940045
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1967940043}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 14.362382, y: 5.4173717, z: 20.417015}
+  m_Center: {x: -4.534519, y: 2.2086856, z: -3.490455}
 --- !u!1001 &1976593107
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13772,6 +14451,52 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3537868412170822655, guid: 6a2628fb07e7d5544b9d9bd100b7b23b, type: 3}
   m_PrefabInstance: {fileID: 1998842975}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2001186455
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2001186456}
+  - component: {fileID: 2001186457}
+  m_Layer: 0
+  m_Name: Rio2.0 (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2001186456
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2001186455}
+  m_LocalRotation: {x: -0, y: -0.59826106, z: -0, w: 0.80130124}
+  m_LocalPosition: {x: -20.64, y: -0.66, z: 58.23}
+  m_LocalScale: {x: 0.63960314, y: 1.0244104, z: 0.83511984}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 286775810}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: -73.491, z: 0}
+--- !u!136 &2001186457
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2001186455}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 2.4594061
+  m_Height: 17.29684
+  m_Direction: 2
+  m_Center: {x: -0.5711267, y: 0, z: 5.9428697}
 --- !u!1001 &2004361605
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14148,8 +14873,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2091294265}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 117.244, y: -0.88, z: 78.6}
-  m_LocalScale: {x: 6.5257635, y: 5.5078, z: 14.1776285}
+  m_LocalPosition: {x: 117.244, y: -0.88, z: 120.2879}
+  m_LocalScale: {x: 6.5257635, y: 5.5078, z: 22.514889}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
