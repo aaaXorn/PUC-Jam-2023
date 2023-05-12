@@ -8,6 +8,8 @@ namespace nEvent
 {
     public class EventTrigger : MonoBehaviour
     {
+        public string text_gameOver;
+
         public float eventTime = 20f;
 
         public GameObject obj_minigame;

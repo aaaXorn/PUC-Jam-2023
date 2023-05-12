@@ -92,7 +92,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.64247036}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -103,7 +103,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 40, y: 50}
+  m_Size: {x: 40, y: 46.55259}
   m_EdgeRadius: 0
 --- !u!114 &7158747461240138369
 MonoBehaviour:
@@ -118,10 +118,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minigame: {fileID: 0}
-  positioning_spd: 310
-  positioning_borderL: -210
-  positioning_borderR: 210
-  falling_spd: 250
+  positioning_spd: 800
+  positioning_borderL: -470
+  positioning_borderR: 470
+  falling_spd: 300
 --- !u!50 &7158747461240138374
 Rigidbody2D:
   serializedVersion: 4

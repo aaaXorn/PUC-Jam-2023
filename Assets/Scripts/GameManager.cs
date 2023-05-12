@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using nEvent;
 using TMPro;
+using nUI;
+using nEvent;
 
 public class GameManager : MonoBehaviour
 {
@@ -35,6 +37,9 @@ public class GameManager : MonoBehaviour
     private TMP_Text timerText;
     [SerializeField]
     private Color clr_eventCD, clr_gameOverTime;
+
+    [SerializeField]
+    private GameObject obj_aviso;
 
     private void Awake()
     {
@@ -81,11 +86,14 @@ public class GameManager : MonoBehaviour
     #region events
     private void StartEvent()
     {
+        obj_aviso.SetActive(true);
+
         isInEvent = true;
 
         int nextEvent = 0;
-        if(force_event < 0) Random.Range(0, list_unusedEvents.Count);
+        if(force_event < 0) nextEvent = Random.Range(0, list_unusedEvents.Count);
         else nextEvent = force_event;
+        print(list_unusedEvents.Count + " " + nextEvent);
 
         currEvent = list_unusedEvents[nextEvent];//Instantiate(list_unusedEvents[nextEvent], Vector3.zero, Quaternion.identity);
         currEvent.SetActive(true);
@@ -98,6 +106,8 @@ public class GameManager : MonoBehaviour
 
     private void GameOver()
     {
+        nUI.GameOver.text_gameOver = currEvent.GetComponent<EventTrigger>().text_gameOver;
+
         stopTimer = true;
 
         SceneManager.LoadScene("GameOver");
@@ -105,6 +115,8 @@ public class GameManager : MonoBehaviour
 
     public void WinEvent()
     {
+        obj_aviso.SetActive(false);
+
         currMinigame.SetActive(false);
         Destroy(currEvent);
 

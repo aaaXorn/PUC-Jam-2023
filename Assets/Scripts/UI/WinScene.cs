@@ -9,10 +9,10 @@ namespace nUI
     {
         private string id_loadScene = "MainMenu";
 
-        private void Start()
+        private void Update()
         {
-            print("ganhou");
-            SceneManager.LoadScene(id_loadScene);
+            if(Input.GetKeyDown(KeyCode.Escape))
+                SceneManager.LoadScene(id_loadScene);
         }
     }
 }

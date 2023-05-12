@@ -110,6 +110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc7342e18e6185c4bae1cc4339af914d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  text_gameOver: "O rio foi amaldi\xE7oado."
   eventTime: 15
   obj_minigame: {fileID: 8172097010147476543}
   event_enable:
@@ -241,6 +242,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f48816325f8c8b419cbdc9dd5476955, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  text_gameOver: "O vulc\xE3o entrou em erup\xE7\xE3o."
   eventTime: 40
   obj_minigame: {fileID: 8172097008699639038}
   event_enable:
@@ -384,6 +386,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc7342e18e6185c4bae1cc4339af914d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  text_gameOver: O terremoto destruiu a cidade.
   eventTime: 20
   obj_minigame: {fileID: 8172097008862756541}
   event_enable:
@@ -431,7 +434,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6826820125360128492
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1357,7 +1360,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 72.215866, y: 15.725189, z: 4.8496246, w: 0}
+  m_margin: {x: 72.215866, y: -13.670441, z: -1.2514496, w: -31.994446}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1443,7 +1446,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8172097008699639037
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1594,7 +1597,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 263.765, y: -357}
+  m_AnchoredPosition: {x: 263.765, y: -384}
   m_SizeDelta: {x: 134.6849, y: 46.5623}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8172097008768488340
@@ -1689,13 +1692,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rTransf_bolinha: {fileID: 8172097008768488342}
-  bolinha_spd: 750
-  bolinha_border_top: 325
-  bolinha_border_bottom: -420
-  bolinha_target_top: 10
-  bolinha_target_bottom: -105
-  bolinha_sourSpot_top: 110
-  bolinha_sourSpot_bottom: -210
+  bolinha_spd: 670
+  bolinha_border_top: 283
+  bolinha_border_bottom: -384
+  bolinha_target_top: 0
+  bolinha_target_bottom: -101
+  bolinha_sourSpot_top: 90
+  bolinha_sourSpot_bottom: -185
   points_needed: 150
   points_perHit: 25
   points_perMiss: 50
@@ -1714,6 +1717,7 @@ GameObject:
   - component: {fileID: 8172097009009979392}
   - component: {fileID: 8172097009009979393}
   - component: {fileID: 3835548779994563651}
+  - component: {fileID: 3243703322889089570}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1807,6 +1811,102 @@ MonoBehaviour:
   clr_lightningVolcano: {r: 1, g: 0.627451, b: 0, a: 1}
   clr_lightningRiver: {r: 0, g: 0.16738506, b: 0.6132076, a: 1}
   directionalLight: {fileID: 0}
+--- !u!82 &3243703322889089570
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8172097009009979394}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 6742ae1dee6ddcd4d87c8a8533823048, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 2
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1.002945
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &8172097009044314813
 GameObject:
   m_ObjectHideFlags: 0
@@ -1879,6 +1979,7 @@ MonoBehaviour:
   timerText: {fileID: 5237474627833134877}
   clr_eventCD: {r: 0.8862745, g: 0.8862745, b: 0.8862745, a: 1}
   clr_gameOverTime: {r: 1, g: 0, b: 0.034482956, a: 1}
+  obj_aviso: {fileID: 188158378440350243}
 --- !u!1 &8172097009055360755
 GameObject:
   m_ObjectHideFlags: 0
@@ -2573,7 +2674,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -250}
+  m_AnchoredPosition: {x: 0, y: -351}
   m_SizeDelta: {x: 25, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!61 &8172097010141626616
@@ -2600,7 +2701,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 500, y: 19.848633}
+  m_Size: {x: 2000, y: 19.848633}
   m_EdgeRadius: 0
 --- !u!50 &8172097010141626623
 Rigidbody2D:
@@ -2871,7 +2972,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 100, y: 100}
+  m_Size: {x: 140, y: 160}
   m_EdgeRadius: 0
 --- !u!1 &8172097010422752858
 GameObject:
