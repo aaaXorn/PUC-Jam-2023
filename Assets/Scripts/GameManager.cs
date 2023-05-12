@@ -93,7 +93,6 @@ public class GameManager : MonoBehaviour
         int nextEvent = 0;
         if(force_event < 0) nextEvent = Random.Range(0, list_unusedEvents.Count);
         else nextEvent = force_event;
-        print(list_unusedEvents.Count + " " + nextEvent);
 
         currEvent = list_unusedEvents[nextEvent];//Instantiate(list_unusedEvents[nextEvent], Vector3.zero, Quaternion.identity);
         currEvent.SetActive(true);

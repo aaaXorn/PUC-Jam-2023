@@ -89,7 +89,6 @@ namespace nCamera
             float _timer = 0f;
             while(_timer < 2f)
             {
-                print("test");
                 Color clr_lerp = Color.Lerp(clr_lightningDefault, clr_flash, Mathf.PingPong(_timer, 1f));
                 directionalLight.color = clr_lerp;
 
