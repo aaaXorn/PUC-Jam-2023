@@ -765,10 +765,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: QuickImport
       objectReference: {fileID: 0}
-    - target: {fileID: 8172097008699639038, guid: 896988c7ffffe6646be37feb3b57ad51, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8172097008862756541, guid: 896988c7ffffe6646be37feb3b57ad51, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -779,15 +775,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8172097009044314787, guid: 896988c7ffffe6646be37feb3b57ad51, type: 3}
       propertyPath: force_event
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8172097009044314787, guid: 896988c7ffffe6646be37feb3b57ad51, type: 3}
       propertyPath: gameOverTimer
       value: 5.5555553e+9
       objectReference: {fileID: 0}
+    - target: {fileID: 8172097009819699643, guid: 896988c7ffffe6646be37feb3b57ad51, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 198.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8172097010141626617, guid: 896988c7ffffe6646be37feb3b57ad51, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -390
+      objectReference: {fileID: 0}
     - target: {fileID: 8172097010147476543, guid: 896988c7ffffe6646be37feb3b57ad51, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8172097010304360710, guid: 896988c7ffffe6646be37feb3b57ad51, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -309
       objectReference: {fileID: 0}
     - target: {fileID: 8832114153445961485, guid: 896988c7ffffe6646be37feb3b57ad51, type: 3}
       propertyPath: m_LocalRotation.w

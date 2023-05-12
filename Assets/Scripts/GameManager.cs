@@ -36,6 +36,9 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private Color clr_eventCD, clr_gameOverTime;
 
+    [SerializeField]
+    private GameObject obj_aviso;
+
     private void Awake()
     {
         s_singleton = this;
@@ -81,6 +84,8 @@ public class GameManager : MonoBehaviour
     #region events
     private void StartEvent()
     {
+        obj_aviso.SetActive(true);
+
         isInEvent = true;
 
         int nextEvent = 0;
@@ -105,6 +110,8 @@ public class GameManager : MonoBehaviour
 
     public void WinEvent()
     {
+        obj_aviso.SetActive(false);
+
         currMinigame.SetActive(false);
         Destroy(currEvent);
 
